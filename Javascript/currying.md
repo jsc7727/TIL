@@ -14,7 +14,7 @@ ex) [파이썬](https://www.geeksforgeeks.org/currying-function-in-python/)
 
 예를들어 함수 큰 함수 안에 작은함수 여러개를 넣었다고 생각해보겠습니다. 
 
-```
+```javascript
 // 일반적인 함수
 const normal = (a,b,c)=> a*b*c;
 console.log(normal(1,2,3));
@@ -42,7 +42,7 @@ arrow function 을 통해 일반적인 함수와 currying 함수를 만들었습
 
 예시로 설명하겠습니다 : )
 
-```
+```javascript
 // 커링을 사용한 함수
 const currying = a => b => c => a*b*c;
 console.log(currying(1)(2)(3));
@@ -63,7 +63,7 @@ console.log(alwaysMultiple2(3));
 
 이것도 예시로 설명하겠습니다.
 
-```
+```javascript
 const curry = (func) => {
   return curried = (...args) => {
     if (args.length >= func.length) {
