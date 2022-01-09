@@ -123,23 +123,40 @@ console.log(this.a) // this 란 메소드를 호출한 객체가 저장되어 �
 <br/>
 
 # Lexical Scope(Static Scope) vs Dynamic Scope
+## **자바스크립트는 렉시컬 스코프를 사용하고 있습니다.**
 
-## Lexical Scope(Static Scope)
+렉시컬과 다이나믹의 차이는 두가지로 나누어집니다.
+
+먼저 코드로 예시를 살펴보겠습니다.
 ```javascript  
-// 전역 스코프
 var data = 10;
-function a(){ // 함수 스코프
-    // 1번 위치
+function a(){
     var data = 20;
     b();
 }
 function b(){
     console.log(data)
 }
-a()
-b()
-console.log(data)
+a() // ?
+b() // ?
 
+// 1번 Lexical Scope(Static Scope)
+// 10
+// 10
 
+// 2번 Dynamic Scope
+// 20
+// 10
 ```
-    
+
+## Lexical Scope(Static Scope)
+> 함수를 어디서 선언하였는지에 따라 상위 스코프를 결정하는 방식
+
+**함수 b**는 전역에 선언되었기에 함수 a 에서 호출되었지만 **전역함수**의 data변수의 값인 **10**을 출력한다.
+
+## Dynamic Scope
+> 함수를 어디서 호출하였는지에 따라 상위 스코프로 결정하는 방식
+
+**함수 b**는 **함수 a** 에서 호출되었기에 **함수 a** 의 data 변수의 값인 **20**을 출력한다.
+
+<br/>
