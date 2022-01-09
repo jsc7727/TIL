@@ -6,7 +6,7 @@
 
 자바스크립트 뿐만 아니라 다른 언어에서도 사용되고 있습니다.
 
-ex) [파이썬](https://www.geeksforgeeks.org/currying-function-in-python/)
+> 예시) [파이썬](https://www.geeksforgeeks.org/currying-function-in-python/)
 
 <br/>
 
@@ -89,6 +89,6 @@ console.log(curriedSum(1)(2)(3) ); // 6, 모두 커링하기
 
 코드를 볼때 필요한 지식
 
- [Function.prototype.apply() - JavaScript | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+>  [Function.prototype.apply() - JavaScript | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 
- [Arrow function expressions - JavaScript | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+> [Arrow function expressions - JavaScript | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
